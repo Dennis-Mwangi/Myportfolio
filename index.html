@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Tailwind CSS (for easy styling) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 font-sans">
+
+  <!-- Navigation -->
+  <header class="flex justify-between items-center p-6 bg-black/20 backdrop-blur-md sticky top-0">
+    <h1 class="text-2xl font-bold text-blue-400">Dennis Karanja</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-6">
+    <h2 class="text-5xl font-bold mb-4">Hi, I'm Dennis 👋</h2>
+    <p class="text-xl text-gray-300 mb-6">
+      A passionate web developer & comedian who loves creating fun digital experiences.
+    </p>
+    <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+      View My Work
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold mb-4 text-blue-400">About Me</h3>
+    <p class="text-lg leading-relaxed text-gray-300">
+      I’m a creative storyteller who blends tech and comedy to make people smile and think.
+      I specialize in web development, video editing, and creating engaging content for social media.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-800/60 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-center text-blue-400">My Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 rounded-xl p-4 shadow-lg hover:shadow-blue-400/20 transition">
+          <img src="images/project1.jpg" alt="Project 1" class="rounded-lg mb-4">
+          <h4 class="text-xl font-semibold mb-2">Weather App</h4>
+          <p class="text-gray-400 mb-3">A clean, glassmorphic weather app built with HTML, CSS, and JS.</p>
+          <a href="https://github.com/dennis-mwangi/weaapp" class="text-blue-400 hover:underline">View Project →</a>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl p-4 shadow-lg hover:shadow-blue-400/20 transition">
+          <img src="images/project2.jpg" alt="Project 2" class="rounded-lg mb-4">
+          <h4 class="text-xl font-semibold mb-2">Comedy Skit Page</h4>
+          <p class="text-gray-400 mb-3">My “Dennis is Karanja – Funny Clips” comedy project on Facebook.</p>
+          <a href="#" class="text-blue-400 hover:underline">View Project →</a>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl p-4 shadow-lg hover:shadow-blue-400/20 transition">
+          <img src="images/project3.jpg" alt="Project 3" class="rounded-lg mb-4">
+          <h4 class="text-xl font-semibold mb-2">POS Dashboard</h4>
+          <p class="text-gray-400 mb-3">A sleek point-of-sale web dashboard built with Bootstrap and Python backend.</p>
+          <a href="#" class="text-blue-400 hover:underline">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <h3 class="text-3xl font-bold mb-4 text-blue-400">Contact Me</h3>
+    <p class="text-gray-300 mb-6">Got a project, collaboration, or funny idea? Let’s connect!</p>
+    <a href="mailto:dennis@example.com" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold text-white transition">
+      Send Email
+    </a>
+  </section>
+
+  <footer class="text-center py-6 text-gray-400 text-sm">
+    © 2025 Dennis Karanja. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
